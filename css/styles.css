@@ -28,6 +28,21 @@
 /* ------------------------------------------------------------------------- */
 /* Left column                                                               */
 /* ------------------------------------------------------------------------- */
+.left-column .card-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #47536e;
+}
+
+.left-column .card-text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    color: #585a61;
+}
+
 .left-column .card:nth-child(odd) .card-body-wrapper {
     order: 1;
 }
