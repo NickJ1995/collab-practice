@@ -47,7 +47,7 @@
     order: 1;
 }
 
-.left-column .card:nth-child(odd) .card-img-wrapper {
+.left-column .card:nth-child(even) .card-img-wrapper {
     order: 2;
 }
 
