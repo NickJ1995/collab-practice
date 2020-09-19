@@ -8,12 +8,15 @@
 }
 
 .hero h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 3em;
     font-weight: 500;
     color: #5777ba;
 }
 
 .hero h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     font-size: 1.5em;
     color: #515f7d;
 }
