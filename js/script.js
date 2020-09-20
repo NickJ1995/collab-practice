@@ -41,6 +41,7 @@ $(document).ready(function() {
             this.main     = document.querySelector('main')
             this.social   = document.querySelector('.social')
             this.navLinks = document.querySelectorAll('.nav-link')
+            this.navbarToggle = document.querySelector('#navbarToggle')
         },
 
         attachEventListeners: function() {
@@ -48,11 +49,11 @@ $(document).ready(function() {
         },
 
         onNavLinkClicked: function(event) {
-            event.preventDefault();
             let link = event.target;
             let section = this.linkToDOMSection(link);
-            
+
             if (section != null) {
+                event.preventDefault();
                 let yOffset = section.offsetTop;
                 // We need to subtract the height of the header from the yOffset
                 // because the header has fixed positioning. Without this adjustment,
@@ -63,6 +64,7 @@ $(document).ready(function() {
                     top: yOffset,
                     behavior: 'smooth'
                 });
+                this.navbarToggle.classList.remove('show')
             }
         },
 
