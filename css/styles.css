@@ -108,3 +108,18 @@
         order: 2;
     }
 }
+
+@media all and (max-width: 767px) {
+    .left-column .card-img-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-column .card-title, .card-text {
+        text-align: center;
+    }
+
+    .left-column .card-img {
+        max-width: 320px;
+    }    
+}
