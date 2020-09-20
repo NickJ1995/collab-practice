@@ -1,4 +1,30 @@
 /* ------------------------------------------------------------------------- */
+/* Navbar                                                                    */
+/* ------------------------------------------------------------------------- */
+header {
+    transition: all ease 0.5s;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #5777ba !important;
+}
+
+.nav-link {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+    color: #47536e !important;
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-link:hover {
+    color: #5777ba !important;
+}
+
+/* ------------------------------------------------------------------------- */
 /* Hero                                                                      */
 /* ------------------------------------------------------------------------- */
 .hero {
