@@ -5,6 +5,12 @@ header {
     transition: all ease 0.5s;
 }
 
+.fixed-top.scrolled {
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 15px 0px;
+}
+
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
