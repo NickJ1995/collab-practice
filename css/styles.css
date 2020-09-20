@@ -43,14 +43,6 @@
     color: #585a61;
 }
 
-.left-column .card:nth-child(odd) .card-body-wrapper {
-    order: 1;
-}
-
-.left-column .card:nth-child(even) .card-img-wrapper {
-    order: 2;
-}
-
 /* ------------------------------------------------------------------------- */
 /* Social section                                                            */
 /* ------------------------------------------------------------------------- */
@@ -97,3 +89,15 @@
     }
 }
 
+/* ------------------------------------------------------------------------- */
+/* Left column - Responsive media queries                                    */
+/* ------------------------------------------------------------------------- */
+@media all and (min-width: 768px) {
+    .left-column .card:nth-child(odd) .card-body-wrapper {
+        order: 1;
+    }
+
+    .left-column .card:nth-child(even) .card-img-wrapper {
+        order: 2;
+    }
+}
