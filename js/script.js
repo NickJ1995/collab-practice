@@ -51,16 +51,19 @@ $(document).ready(function() {
             event.preventDefault();
             let link = event.target;
             let section = this.linkToDOMSection(link);
-            let yOffset = section.offsetTop;
-            // We need to subtract the height of the header from the yOffset
-            // because the header has fixed positioning. Without this adjustment,
-            // the header will cover part of the top of the section.
-            yOffset -= this.header.offsetHeight;
-            window.scrollTo({
-                left: 0,
-                top: yOffset,
-                behavior: 'smooth'
-            });
+            
+            if (section != null) {
+                let yOffset = section.offsetTop;
+                // We need to subtract the height of the header from the yOffset
+                // because the header has fixed positioning. Without this adjustment,
+                // the header will cover part of the top of the section.
+                yOffset -= this.header.offsetHeight;
+                window.scrollTo({
+                    left: 0,
+                    top: yOffset,
+                    behavior: 'smooth'
+                });
+            }
         },
 
         linkToDOMSection: function(link) {
