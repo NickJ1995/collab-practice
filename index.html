@@ -6,17 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Take Home Assignment</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+    <!-- Navbar -->
+    <header class="fixed-top">
+      <div class="container-md">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">MFW</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarNavAltMnavbarTogglearkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+            <div class="navbar-nav">
+              <a class="nav-link mr-lg-2" href="#">Home</a>
+              <a class="nav-link mr-lg-2" href="#">About</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero d-flex align-items-center">
+      <div class="container-md">
+        <div class="row flex-lg-row flex-column-reverse">
+          <div class="col d-flex flex-column justify-content-center mt-lg-0 mt-5">
+            <h1 class="text-lg-left text-center">Mobile Friendly Websites</h1>
+            <h2 class="text-lg-left text-center">Day 4: Take home assignment</h2>
+          </div>
+          <div class="col text-center">
+            <img src="img/web_dev.svg" alt="Illustration of a web developer">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main content -->
+    <main class="container mt-5">
+      <p class="section-title text-center">What You'll Learn</p>
+      <div class="row mt-5 pt-3">
+        <!-- Left column -->
+        <section class="col-lg-11 col-12 left-column">
+          <!-- Responsive design card -->
+          <div class="card border-0 mb-5">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4 card-img-wrapper">
+                <img src="img/responsive_design.svg" 
+                     class="card-img" 
+                     alt="Illustration of multiple devices with different screen sizes.">
+              </div>
+              <div class="col-md-8 card-body-wrapper">
+                <div class="card-body">
+                  <p class="card-title">Responsive Design</p>
+                  <p class="card-text">Make your websites look beautiful on all screen sizes and devices using the popular Bootstrap CSS library.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Version control card -->
+          <div class="card border-0 mb-5">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4 card-img-wrapper">
+                <img src="img/version_control.svg" 
+                     class="card-img" 
+                     alt="Illustration of a version control system.">
+              </div>
+              <div class="col-md-8 card-body-wrapper">
+                <div class="card-body">
+                  <p class="card-title">Version Control</p>
+                  <p class="card-text">Track changes in your code using the industry standard version control system, Git, and collaborate with other developers on code using GitHub repositories.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reading documentation card -->
+          <div class="card border-0 mb-5">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4 card-img-wrapper">
+                <img src="img/documentation.svg" 
+                     class="card-img" 
+                     alt="Illustration of peopel using documentation.">
+              </div>
+              <div class="col-md-8 card-body-wrapper">
+                <div class="card-body">
+                  <p class="card-title">Reading Documentation</p>
+                  <p class="card-text">Learn how to quickly learn new technologies by reading throgh their documentation - a skill that is indispensable to any software developer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right column -->
+        <section class="col-lg-1 col-12 social">
+          <div class="d-flex flex-lg-column align-items-lg-end align-items-center justify-content-center">
+            <a href="#" class="mb-lg-4 mr-lg-0 mr-5">
+              <i class="fab fa-facebook-f" style="color: #4267B2;"></i>
+            </a>
+            <a href="#" class="mb-lg-4 mr-lg-0 mr-5">
+              <i class="fab fa-twitter" style="color: #1DA1F2;"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in" style="color: #0277B5;"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <div class="container p-5">
+        <p class="text-center">&copy; Mobile Friendly Websites, Inc.</p>
+        <p class="text-center mb-0">All right reserved.</p>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

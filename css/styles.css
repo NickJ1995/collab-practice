@@ -1,0 +1,171 @@
+/* ------------------------------------------------------------------------- */
+/* Navbar                                                                    */
+/* ------------------------------------------------------------------------- */
+header {
+    transition: all ease 0.5s;
+}
+
+.fixed-top.scrolled {
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 15px 0px;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #5777ba !important;
+}
+
+.nav-link {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+    color: #47536e !important;
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-link:hover {
+    color: #5777ba !important;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Hero                                                                      */
+/* ------------------------------------------------------------------------- */
+.hero {
+    min-height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(232,236,245,1) 50%);
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    color: #5777ba;
+}
+
+.hero h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #515f7d;
+}
+
+.hero img {
+    width: 540px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Left column                                                               */
+/* ------------------------------------------------------------------------- */
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: #5777ba;
+}
+
+.left-column .card-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #47536e;
+}
+
+.left-column .card-text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    color: #585a61;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Social section                                                            */
+/* ------------------------------------------------------------------------- */
+.social i {
+    font-size: 2em;
+}
+
+.social a {
+    -webkit-transition: transform 0.3s ease-in-out;
+       -moz-transition: transform 0.3s ease-in-out;
+         -o-transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+}
+
+.social a:hover {
+    -webkit-transform: scale(1.5);
+       -moz-transform: scale(1.5);
+         -o-transform: scale(1.5);
+            transform: scale(1.5);
+}
+
+/* ------------------------------------------------------------------------- */
+/* Footer                                                                    */
+/* ------------------------------------------------------------------------- */
+footer {
+    background-color: #E7EBF4;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Hero - Responsive media queries                                           */
+/* ------------------------------------------------------------------------- */
+@media all and (max-width: 767px) {
+    .hero img {
+        width: 400px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero h2 {
+        font-size: 1.2em;
+    }  
+}
+
+@media all and (max-width: 480px) {
+    .hero img {
+        width: 300px;
+    }
+}
+
+@media all and (max-height: 659px) {
+    .hero {
+        padding-top: 74px;
+        padding-bottom: 48px;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+/* Left column - Responsive media queries                                    */
+/* ------------------------------------------------------------------------- */
+@media all and (min-width: 768px) {
+    .left-column .card:nth-child(odd) .card-body-wrapper {
+        order: 1;
+    }
+
+    .left-column .card:nth-child(even) .card-img-wrapper {
+        order: 2;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .left-column .card-img-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-column .card-title, .card-text {
+        text-align: center;
+    }
+
+    .left-column .card-img {
+        max-width: 320px;
+    }    
+}
