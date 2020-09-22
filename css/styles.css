@@ -33,27 +33,27 @@ header {
 /* ------------------------------------------------------------------------- */
 /* Hero                                                                      */
 /* ------------------------------------------------------------------------- */
-.hero {
+.jumbotron {
     min-height: 100vh;
     background: rgb(255,255,255);
     background: linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(232,236,245,1) 50%);
 }
 
-.hero h1 {
+.jumbotron h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3em;
     font-weight: 500;
     color: #5777ba;
 }
 
-.hero h2 {
+.jumbotron h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
     color: #515f7d;
 }
 
-.hero img {
+.jumbotron img {
     width: 540px;
 }
 
@@ -114,29 +114,29 @@ footer {
 /* Hero - Responsive media queries                                           */
 /* ------------------------------------------------------------------------- */
 @media all and (max-width: 767px) {
-    .hero img {
+    .jumbotron img {
         width: 400px;
     }
 }
 
 @media all and (max-width: 575px) {
-    .hero h1 {
+    .jumbotron h1 {
         font-size: 2em;
     }
 
-    .hero h2 {
+    .jumbotron h2 {
         font-size: 1.2em;
     }  
 }
 
 @media all and (max-width: 480px) {
-    .hero img {
+    .jumbotron img {
         width: 300px;
     }
 }
 
 @media all and (max-height: 659px) {
-    .hero {
+    .jumbotron {
         padding-top: 74px;
         padding-bottom: 48px;
     }
