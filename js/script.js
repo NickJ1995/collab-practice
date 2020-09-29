@@ -37,7 +37,7 @@ $(document).ready(function() {
 
         cacheDOM: function() {
             this.header   = document.querySelector('header')
-            this.hero     = document.querySelector('.hero')
+            this.hero     = document.querySelector('.jumbotron')
             this.main     = document.querySelector('main')
             this.social   = document.querySelector('.social')
             this.navLinks = document.querySelectorAll('.nav-link')
